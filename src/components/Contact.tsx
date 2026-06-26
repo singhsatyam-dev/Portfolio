@@ -28,7 +28,7 @@ export default function Contact() {
               <p className="text-gray-500 text-sm">LinkedIn</p>
 
               <p className="mt-2 text-lg">
-                https://www.linkedin.com/in/satyam-kumar-singh-25087b291/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BRJvxfmJzTdmn2RwEWBZDhA%3D%3D
+                https://www.linkedin.com/in/satyam-kumar-singh
               </p>
             </div>
 
@@ -44,11 +44,17 @@ export default function Contact() {
               Download Resume
             </a>
 
-            <a href="#" className="px-6 py-3 border border-gray-700 rounded-xl">
+            <a
+              href="https://github.com/singhsatyam-dev"
+              className="px-6 py-3 border border-gray-700 rounded-xl"
+            >
               View GitHub
             </a>
 
-            <a href="#" className="px-6 py-3 border border-gray-700 rounded-xl">
+            <a
+              href="https://www.linkedin.com/in/satyam-kumar-singh-25087b291/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BRJvxfmJzTdmn2RwEWBZDhA%3D%3D"
+              className="px-6 py-3 border border-gray-700 rounded-xl"
+            >
               LinkedIn
             </a>
           </div>

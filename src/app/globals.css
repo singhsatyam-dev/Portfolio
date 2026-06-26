@@ -6,15 +6,22 @@ html {
 
 body {
   background:
-    radial-gradient(circle at top left,
-      rgba(59,130,246,0.15),
-      transparent 35%),
-
-    radial-gradient(circle at bottom right,
-      rgba(168,85,247,0.15),
-      transparent 35%),
-
-    #050816;
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(249, 115, 22, 0.18),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 85% 35%,
+      rgba(14, 165, 233, 0.18),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 50% 100%,
+      rgba(16, 185, 129, 0.14),
+      transparent 40%
+    ),
+    linear-gradient(180deg, #18181b 0%, #111315 60%, #0d0f11 100%);
 
   color: white;
 }
