@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: "CareerForge",
-    slug: "careerforge",
+    slug: "careerForge",
 
     status: "Completed",
 
@@ -20,7 +20,7 @@ export const projects = [
   {
     title: "CollaborateX",
 
-    slug: "collaboratex",
+    slug: "collaborateX",
 
     status: "Completed",
 
@@ -34,24 +34,5 @@ export const projects = [
     live: "https://collaborate-x-steel.vercel.app/",
 
     tech: ["React", "Node.js", "Express.js", "MongoDB", "Socket.IO"],
-  },
-
-  {
-    title: "AI Interview Simulator",
-
-    slug: "ai-interview-simulator",
-
-    status: "In Progress",
-
-    description:
-      "An AI-powered interview preparation platform with mock interviews, personalized feedback and performance analysis.",
-
-    image: "",
-
-    github: "#",
-
-    live: "#",
-
-    tech: ["Next.js", "TypeScript", "AI", "Stripe"],
   },
 ];

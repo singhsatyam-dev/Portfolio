@@ -15,7 +15,7 @@ export default function Contact() {
             <div>
               <p className="text-gray-500 text-sm">Email</p>
 
-              <p className="mt-2 text-lg">your-email@gmail.com</p>
+              <p className="mt-2 text-lg">sinhgsatyam1@gmail.com</p>
             </div>
 
             <div>
@@ -27,7 +27,9 @@ export default function Contact() {
             <div>
               <p className="text-gray-500 text-sm">LinkedIn</p>
 
-              <p className="mt-2 text-lg">linkedin.com/in/your-profile</p>
+              <p className="mt-2 text-lg">
+                https://www.linkedin.com/in/satyam-kumar-singh-25087b291/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BRJvxfmJzTdmn2RwEWBZDhA%3D%3D
+              </p>
             </div>
 
             <div>

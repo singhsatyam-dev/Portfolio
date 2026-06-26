@@ -7,11 +7,14 @@ export default function Footer() {
         </p>
 
         <div className="flex gap-6">
-          <a href="#" className="text-gray-400 hover:text-white transition">
+          <a href="https://github.com/singhsatyam-dev" className="text-gray-400 hover:text-white transition">
             GitHub
           </a>
 
-          <a href="#" className="text-gray-400 hover:text-white transition">
+          <a
+            href="https://www.linkedin.com/in/satyam-kumar-singh-25087b291/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BRJvxfmJzTdmn2RwEWBZDhA%3D%3D"
+            className="text-gray-400 hover:text-white transition"
+          >
             LinkedIn
           </a>
 

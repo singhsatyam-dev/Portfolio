@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import Image from "next/image";
 import { projects } from "../data/projects";
 
@@ -52,27 +54,31 @@ export default function Projects() {
                   ))}
                 </div>
 
-                <div className="flex gap-4 mt-8">
+                <div className="flex flex-wrap gap-4 mt-8">
                   <a
                     href={project.github}
-                    className="px-6 py-3 bg-white text-black rounded-xl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3 bg-white text-black rounded-xl hover:scale-105 transition-all"
                   >
                     GitHub
                   </a>
 
                   <a
                     href={project.live}
-                    className="px-6 py-3 border border-gray-700 rounded-xl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3 border border-gray-700 rounded-xl hover:bg-white/10 transition-all"
                   >
                     Live Demo
                   </a>
 
-                  <a
+                  <Link
                     href={`/projects/${project.slug}`}
-                    className="px-6 py-3 border border-gray-700 rounded-xl"
+                    className="px-6 py-3 border border-blue-500/40 text-blue-400 rounded-xl hover:bg-blue-500 hover:text-white transition-all duration-300"
                   >
-                    Case Study
-                  </a>
+                    View Case Study →
+                  </Link>
                 </div>
               </div>
             </div>

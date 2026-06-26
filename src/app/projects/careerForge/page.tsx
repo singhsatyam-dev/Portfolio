@@ -1,40 +1,50 @@
-import Image from "next/image";
+import { careerForge } from "@/src/data/careerForge";
 
-export default function CareerForgeCaseStudy() {
+import CaseStudyHero from "@/src/components/caseStudy/CaseStudyHero";
+import Overview from "@/src/components/caseStudy/Overview";
+import ProblemSolution from "@/src/components/caseStudy/ProblemSolution";
+import Features from "@/src/components/caseStudy/Features";
+import Gallery from "@/src/components/caseStudy/Gallery";
+import TechStack from "@/src/components/caseStudy/TechStack";
+import Challenges from "@/src/components/caseStudy/Challenges";
+import Learnings from "@/src/components/caseStudy/Learnings";
+import NextProject from "@/src/components/caseStudy/NextProject";
+import BackToPortfolio from "@/src/components/caseStudy/BackToPortfolio";
+
+export default function CareerForgePage() {
   return (
     <main className="max-w-6xl mx-auto px-6 py-24">
-      <h1 className="text-6xl font-bold">CareerForge</h1>
+      <CaseStudyHero
+        title={careerForge.title}
+        subtitle={careerForge.subtitle}
+        github={careerForge.github}
+        live={careerForge.live}
+        heroImage={careerForge.heroImage}
+      />
 
-      <p className="text-xl text-gray-400 mt-4">
-        AI Powered Full Stack Job Portal
-      </p>
+      <Overview overview={careerForge.overview} />
 
-      <div className="flex gap-4 mt-8">
-        <a
-          href="https://job-portal-full-stack-jade.vercel.app/"
-          target="_blank"
-          className="px-6 py-3 bg-white text-black rounded-xl"
-        >
-          Live Demo
-        </a>
+      <ProblemSolution
+        problem={careerForge.problem}
+        solution={careerForge.solution}
+      />
 
-        <a
-          href="https://github.com/singhsatyam-dev/Job-portal-Full_Stack"
-          target="_blank"
-          className="px-6 py-3 border border-gray-700 rounded-xl"
-        >
-          GitHub
-        </a>
-      </div>
+      <Features features={careerForge.features} />
 
-      <div className="relative w-full h-[550px] mt-16 rounded-3xl overflow-hidden">
-        <Image
-          src="/images/CareerForge/CareerForge-LandingPage.png"
-          alt="CareerForge"
-          fill
-          className="object-cover"
-        />
-      </div>
+      <TechStack tech={careerForge.techStack} />
+
+      <Gallery images={careerForge.gallery} />
+
+      <Challenges challenges={careerForge.challenges} />
+
+      <Learnings learnings={careerForge.learnings} />
+
+      <BackToPortfolio />
+
+      <NextProject
+        title={careerForge.nextProject!.title}
+        href={careerForge.nextProject!.href}
+      />
     </main>
   );
 }
